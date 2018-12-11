@@ -1,0 +1,74 @@
+@import "_minix.scss";
+@import "common.scss";
+.wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+header,
+footer {
+    width: 100%;
+    height: pxTorem(45px);
+    background: limegreen;
+}
+
+section {
+    width: 100%;
+    flex: 1;
+    box-sizing: border-box;
+    padding: 0 pxTorem(10px);
+    overflow: hidden;
+    .ulList {
+        display: flex;
+        padding: pxTorem(10px) 0;
+        li {
+            margin-right: pxTorem(15px);
+            font-size: pxTorem(14px);
+            &:hover {
+                color: pink;
+                font-weight: bold;
+                border-bottom: 1px solid pink;
+            }
+        }
+    }
+}
+
+.scroll {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    .inner {
+        width: 100%;
+        min-height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        &:before {
+            content: attr(up);
+            width: 100%;
+            height: pxTorem(44px);
+            line-height: pxTorem(44px);
+            background: olive;
+            text-align: center;
+            position: absolute;
+            bottom: -44px;
+            left: 0;
+        }
+        img {
+            width: 90%;
+        }
+        dl {
+            width: 50%;
+            text-align: center;
+        }
+        dd {
+            line-height: pxTorem(35px);
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+}

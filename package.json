@@ -1,0 +1,22 @@
+{
+  "name": "tabsorter-fdd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dandan1006/TabSorter-fdd.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dandan1006/TabSorter-fdd/issues"
+  },
+  "homepage": "https://github.com/dandan1006/TabSorter-fdd#readme",
+  "dependencies": {
+    "gulp": "^4.0.0"
+  }
+}
